@@ -1,0 +1,57 @@
+/* styles.css */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Color de fondo para el cuerpo */
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8px;
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff; /* Color de fondo para la calculadora */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para efecto de elevación */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+h1 {
+    grid-column: span 4;
+    text-align: center;
+    color: #333333; /* Color del texto */
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: #FFA07A ; /* Color de fondo para los botones */
+    color: #ffffff; /* Color del texto en los botones */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+button:hover {
+    background-color: #4fa3cc; /* Color de fondo al pasar el mouse sobre los botones */
+}
+
+button:active {
+    background-color: #3c7faf; /* Color de fondo al hacer clic en los botones */
+}
+
+#display {
+    grid-column: span 4;
+    padding: 20px;
+    font-size: 24px;
+    text-align: right;
+    border: none;
+    background-color: #e0e0e0; /* Color de fondo para la pantalla */
+    border-radius: 5px; /* Bordes redondeados */
+}
